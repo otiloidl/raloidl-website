@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RA Loidl</title>
+<meta name="description" content="RA Loidl, Dachau">
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #1f2a44;
+    --text: #2b2f38;
+    --muted: #5b6170;
+    --accent: #8e2a2a;
+    --line: #e3e5ea;
+    --bg: #ffffff;
+    --serif: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    --sans: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --ink: #e8ebf2;
+      --text: #d4d7de;
+      --muted: #9aa0ad;
+      --accent: #d98a8a;
+      --line: #2e3442;
+      --bg: #151a24;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+  .wrap {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 3rem;
+  }
+  header {
+    border-left: 3px solid var(--accent);
+    padding-left: 1.25rem;
+    margin-bottom: 3rem;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 3rem);
+    line-height: 1.1;
+    color: var(--ink);
+    margin: 0 0 .5rem;
+    letter-spacing: -.01em;
+  }
+  .role {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--ink);
+    margin: 3rem 0 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+    color: var(--ink);
+    margin: 1.75rem 0 .35rem;
+  }
+  p { margin: 0 0 1rem; }
+  address { font-style: normal; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .contact {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: .35rem 1.25rem;
+    margin: 0;
+  }
+  .contact dt { color: var(--muted); }
+  .contact dd { margin: 0; }
+  .legal {
+    border-top: 1px solid var(--line);
+    margin-top: 4rem;
+    padding-top: .5rem;
+    font-size: .95rem;
+  }
+  .legal .intro { color: var(--muted); }
+  @media (min-width: 760px) {
+    .legal {
+      display: grid;
+      grid-template-columns: 15rem 1fr;
+      column-gap: 2.5rem;
+    }
+    .legal h2, .legal .intro { grid-column: 1 / -1; }
+    .legal h3 { grid-column: 1; margin: 0 0 1.25rem; padding-top: .1rem; }
+    .legal h3 + p { grid-column: 2; margin: 0 0 1.25rem; max-width: 42rem; }
+  }
+  footer {
+    border-top: 1px solid var(--line);
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    font-size: .9rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1.5rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>RA Loidl</h1>
+  </header>
+
+  <main>
+    <h2>Kontakt</h2>
+    <dl class="contact">
+      <dt>Anschrift</dt>
+      <dd><address>Schleißheimer Str. 19<br>85221 Dachau</address></dd>
+      <dt>Telefon</dt>
+      <dd>089 42018954</dd>
+      <dt>E-Mail</dt>
+      <dd><a href="mailto:info@raloidl.com">info@raloidl.com</a></dd>
+    </dl>
+
+    <section class="legal" id="impressum">
+      <h2>Impressum</h2>
+      <p class="intro">Angaben gemäß § 5 DDG und § 2 DL-InfoV</p>
+
+      <h3>Anbieterin</h3>
+      <p>RA Loidl<br>
+      Schleißheimer Str. 19, 85221 Dachau<br>
+      Telefon: 089 42018954<br>
+      E-Mail: <a href="mailto:info@raloidl.com">info@raloidl.com</a></p>
+
+      <h3>Berufsbezeichnung</h3>
+      <p>Rechtsanwältin, verliehen in der Bundesrepublik Deutschland.</p>
+
+      <h3>Zuständige Kammer</h3>
+      <p>Rechtsanwaltskammer München<br>
+      Tal 33, 80331 München<br>
+      <a href="https://www.rak-muenchen.de">www.rak-muenchen.de</a></p>
+
+      <h3>Berufsrechtliche Regelungen</h3>
+      <p>Bundesrechtsanwaltsordnung (BRAO), Berufsordnung für Rechtsanwälte (BORA), Fachanwaltsordnung (FAO), Rechtsanwaltsvergütungsgesetz (RVG) und Berufsregeln der Rechtsanwälte der Europäischen Union (CCBE). Die Regelungen sind abrufbar unter <a href="https://www.brak.de/anwaltschaft/berufsrecht/">www.brak.de</a>.</p>
+
+      <h3>Berufshaftpflichtversicherung</h3>
+      <p>Dialog Versicherung AG<br>
+      Adenauerring 7, 81737 München</p>
+
+      <h3>Umsatzsteuer-Identifikationsnummer</h3>
+      <p>DE 250946652</p>
+
+      <h3>Verbraucherstreitbeilegung</h3>
+      <p>Bei Streitigkeiten zwischen Rechtsanwälten und ihren Auftraggebern besteht die Möglichkeit der außergerichtlichen Streitschlichtung bei der Schlichtungsstelle der Rechtsanwaltschaft, Rauchstraße 26, 10787 Berlin, <a href="https://www.s-d-r.org">www.s-d-r.org</a>. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle bin ich nicht verpflichtet.</p>
+    </section>
+
+    <section class="legal" id="datenschutz">
+      <h2>Datenschutzerklärung</h2>
+
+      <h3>Verantwortliche</h3>
+      <p>RA Loidl, Schleißheimer Str. 19, 85221 Dachau, <a href="mailto:info@raloidl.com">info@raloidl.com</a></p>
+
+      <h3>Aufruf dieser Website</h3>
+      <p>Diese Website verwendet keine Cookies, keine Analyse- oder Trackingdienste und keine extern geladenen Schriftarten oder Inhalte. Beim Aufruf verarbeitet der Hostinganbieter technisch notwendige Zugriffsdaten (insbesondere IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browsertyp) in Server-Logfiles, um die Website auszuliefern und ihre Sicherheit zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+      <h3>Hosting</h3>
+      <p>Die Website wird über GitHub Pages bereitgestellt, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Dabei können Daten in die USA übermittelt werden. Die Übermittlung stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission zum EU-US Data Privacy Framework. Weitere Informationen: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
+
+      <h3>Kontakt per E-Mail oder Telefon</h3>
+      <p>Wenn Sie mich kontaktieren, verarbeite ich Ihre Angaben zur Bearbeitung Ihrer Anfrage. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Anfrage auf ein Mandat gerichtet ist, im Übrigen Art. 6 Abs. 1 lit. f DSGVO. Die Daten werden gelöscht, sobald sie nicht mehr erforderlich sind und keine gesetzlichen oder berufsrechtlichen Aufbewahrungspflichten entgegenstehen.</p>
+
+      <h3>Ihre Rechte</h3>
+      <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die Verarbeitung (Art. 15 bis 21 DSGVO). Sie können sich außerdem bei einer Datenschutzaufsichtsbehörde beschweren, zum Beispiel beim Bayerischen Landesamt für Datenschutzaufsicht, Promenade 18, 91522 Ansbach, <a href="https://www.lda.bayern.de">www.lda.bayern.de</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 RA Loidl</span>
+    <a href="#impressum">Impressum</a>
+    <a href="#datenschutz">Datenschutz</a>
+  </footer>
+
+</div>
+</body>
+</html>
